@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #f0f0f0;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 16px;
+}
+
+.action-button, .delete-button, .send-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+}
+
+.action-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.delete-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+
+.send-button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.post-box {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.post-nickname {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.post-date {
+    -fx-text-fill: #757575;
+    -fx-font-size: 14px;
+}
+
+.post-content {
+    -fx-font-size: 16px;
+    -fx-wrap-text: true;
+}
+
+#threadTitleLabel {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+#messageArea {
+    -fx-font-size: 16px;
+}
+
+.table-view {
+    -fx-font-size: 16px;
+}
+
+.table-view .column-header {
+    -fx-font-size: 18px;
+}
+
+.text-field, .password-field {
+    -fx-font-size: 16px;
+}
+
+.label {
+    -fx-font-size: 16px;
+}

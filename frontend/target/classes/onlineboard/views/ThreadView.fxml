@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="onlineboard.controllers.ThreadViewController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20"/>
+    </padding>
+    <top>
+        <VBox spacing="15">
+            <HBox spacing="15" alignment="CENTER_LEFT">
+                <Button fx:id="backButton" text="戻る" onAction="#handleBack" styleClass="action-button" prefHeight="40"/>
+                <Label fx:id="threadTitleLabel" style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                <HBox HBox.hgrow="ALWAYS" />
+                <Button fx:id="refreshButton" text="更新" onAction="#handleRefresh" styleClass="action-button" prefHeight="40"/>
+                <Button fx:id="deleteThreadButton" text="スレッドを削除" onAction="#handleDeleteThread"
+                        styleClass="delete-button" prefHeight="40"/>
+            </HBox>
+            <Separator/>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <VBox fx:id="postsContainer" spacing="15"/>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <VBox spacing="15">
+            <Separator/>
+            <HBox spacing="15">
+                <TextArea fx:id="messageArea" promptText="メッセージを入力してください" prefHeight="100" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="sendButton" onAction="#handleSend" text="送信" styleClass="send-button" prefHeight="40"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

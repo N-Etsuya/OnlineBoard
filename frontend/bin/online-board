@@ -1,0 +1,4 @@
+#!/bin/sh
+JLINK_VM_OPTIONS="-Djdk.gtk.version=2 -Duser.language=ja -Duser.country=JP"
+DIR=`dirname $0`
+$DIR/java $JLINK_VM_OPTIONS -m onlineboard/onlineboard.MainApp "$@"
